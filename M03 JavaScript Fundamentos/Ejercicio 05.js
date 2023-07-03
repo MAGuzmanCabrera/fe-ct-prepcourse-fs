@@ -8,46 +8,79 @@ function esPositivo(num) {
    // Si el número es negativo ---> "Es negativo".
    // Si el número es 0, devuelve false.
    // Tu código:
-}
+   if (num > 0){
+      console.log("Es positivo");
+      return "Es positivo";
+   }  else if (num<0){
+      console.log("Es negativo");
+      return "Es negativo";
+   }  else {
+      console.log("false");
+      return false;
+   }
+   }
+
 
 function agregarSimboloExclamacion(str) {
    // Agrega un símbolo de exclamación al final del string "str" y retórnalo
    // Ejemplo: "hello world" ---> "hello world!"
    // Tu código:
+   console.log(str+"!");
+   return (str+"!");
 }
+agregarSimboloExclamacion("helo world")
 
 function combinarNombres(nombre, apellido) {
    // Retorna "nombre" y "apellido" combinados en un mismo string pero separados por un espacio.
    // Ejemplo: ("Soy", "Henry") ---> "Soy Henry"
    // Tu código:
+   console.log(nombre+" "+apellido);
+   return (nombre+" "+apellido);
 }
+combinarNombres("Miguel","Angel")
+
 
 function obtenerSaludo(nombre) {
    // Toma el string "nombre" y concatena otra string en la cadena para que tome la siguiente forma:
    // Ejemplo: "Martin" ---> "Hola Martin!"
    // Tu código:
+   console.log("Hola"+" "+nombre+"!");
+   return ("Hola"+" "+nombre+"!");
 }
+obtenerSaludo("Sara")
 
 function obtenerAreaRectangulo(alto, ancho) {
    // Retornar el área de un rectángulo teniendo su altura y ancho.
    // Tu código:
+   var area=alto*ancho;
+   console.log(area);
+   return(area);
 }
+obtenerAreaRectangulo(5,6)
 
 function retornarPerimetro(lado) {
    // La función recibe como argumento la medida de un lado de un cuadrado.
    // Debes retornar su perímetro.
    // Tu código:
+   var perimetro=4*lado;
+   console.log(perimetro);
+   return(perimetro);
 }
+retornarPerimetro(5)
 
 function areaDelTriangulo(base, altura) {
    // Calcula el área de un triángulo y retorna el resultado.
    // Tu código:
+   var areat=(base*altura)/2;
+   return(areat);
 }
+areaDelTriangulo(5,6)
 
 function deEuroAdolar(euro) {
    // Supongamos que 1 euro equivale a 1.20 dólares.
    // Debes calcular el valor recibido como argumento pasándolo a dolares.
    // Tu código:
+   return(euro*1.20);
 }
 
 function esVocal(letra) {
@@ -55,6 +88,14 @@ function esVocal(letra) {
    // Si el usuario ingresa un string de más de un caracter debes retornar el mensaje: "Dato incorrecto".
    // Si no es vocal, tambien debe retornar "Dato incorrecto".
    // Tu código:
+   if (letra.length>1){
+      return("Dato incorrecto");
+   } else if (letra==="a"||letra==="e"||letra==="i"||letra==="o"||letra==="u"){
+      return("Es vocal");
+   } else{
+      return("Dato incorrecto");
+   }
+   
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
